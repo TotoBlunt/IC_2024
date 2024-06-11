@@ -1,7 +1,7 @@
 #Cargando bibliotecas
 import pandas as pd 
 import streamlit as st
-
+import openpyxl
 
 #Agregar un titulo
 st.title("Aplicacion para cargar archivos de Excel")
@@ -36,6 +36,9 @@ if archivo_excel:
                 fecha_inicio = st.date_input("Fecha de inicio: ")
                 fecha_fin = st.date_input("Fecha de fin: ")
                 if fecha_inicio and fecha_fin:
+                    fecha_inicio = pd.to_datetime(fecha_inicio)
+                    fecha_fin = pd.to_datetime(fecha_fin)
+                    
                     df_filtrado = df[(df['Fecha'] >= fecha_inicio)& (df["Fecha"]<= fecha_fin)]
                     st.dataframe(df_filtrado)
             else:
