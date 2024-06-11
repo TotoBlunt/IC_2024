@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #Cargando bibliotecas
+=======
+>>>>>>> origin/main
 #Cargando Bibliotecas
 import pandas as pd
 import streamlit as st
