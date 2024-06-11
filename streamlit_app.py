@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Aplicacion para cargar archivos de Excel")
 
 #Agregando una imagen (logo)
-st.image("",caption="Logo IC",use_column_width=True)
+#st.image("",caption="Logo IC",use_column_width=True)
 
 #Subir el archivo Excel
 archivo_excel = st.file_uploader("Selecciona un archivo excel" , type="xlsx") 
