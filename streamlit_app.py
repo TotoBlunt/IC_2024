@@ -1,7 +1,7 @@
 #Cargando bibliotecas
 import pandas as pd 
 import streamlit as st
-import openpyxl
+
 
 #Agregar un titulo
 st.title("Aplicacion para cargar archivos de Excel")
